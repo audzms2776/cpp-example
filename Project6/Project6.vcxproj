@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -118,8 +118,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="constexpr.cpp" />
+    <ClCompile Include="constexpr.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Devide.cpp" />
+    <ClCompile Include="Foo.cpp" />
+    <ClCompile Include="lap.cpp" />
     <ClCompile Include="Vehicle.cpp" />
     <ClCompile Include="auto.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
@@ -127,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Devide.h" />
+    <ClInclude Include="Foo.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Vehicle.h" />
   </ItemGroup>
