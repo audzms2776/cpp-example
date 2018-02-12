@@ -19,6 +19,4 @@ int main()
 		<< dp.get() << endl
 		<< raw_dp << endl
 		<< *raw_dp << endl;
-
-
 }
