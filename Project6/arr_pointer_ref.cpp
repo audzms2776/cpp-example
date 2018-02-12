@@ -33,6 +33,11 @@ int main()
 	int i = 3;
 	int *ip = &i;
 
+	int *ip2 = new int;
+	ip2 = &i;
+
+	delete ip2;
+
 	// 포인터 초기화
 	int *ip3 = nullptr;
 	int *ip4{};
