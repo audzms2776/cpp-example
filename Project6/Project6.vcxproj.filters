@@ -27,6 +27,15 @@
     <ClCompile Include="constexpr.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Foo.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="arr_pointer_ref.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="smart_pointer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
@@ -37,6 +46,9 @@
     </ClInclude>
     <ClInclude Include="Devide.h">
       <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Foo.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
